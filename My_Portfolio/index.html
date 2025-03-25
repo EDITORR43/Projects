@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-p"></i>
+                    <div class="logo-text">Praveen kumar</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="Profile pic.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Praveen kumar</h1>
+                    <p> Hi, I'm Praveen kumar, a passionate Computer Applications student
+                        
+                        and a skilled web developer specializing in building complex, high-performance websites. With expertise in modern web technologies, I create scalable eCommerce platforms, dynamic web applications, and custom digital solutions that enhance user experience and business growth.
+
+                        I focus on delivering responsive, secure, and user-friendly websites tailored to meet unique business needs. Whether it's a full-stack development project or an advanced custom web solution, I ensure high-quality, efficient, and future-ready web experiences.
+                        
+                        Let's collaborate and bring your vision to life! 🚀
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="Resume.pdf" class="btn active">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
